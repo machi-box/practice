@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<section>
+<canvas id="oekaki" width="640" height="480">きゃんばす</canvas>
+
+</section>
+<input type="button" value="hozon" onclick="OnButtonClick();"/><br />
+<script>
+	var drawFlag = false;
+	var oldX = 0;
+	var oldY = 0;
+	window.addEventListener("load",function(){
+	var can = document.getElementById("oekaki");
+	can.addEventListener("mousemove",draw,true);
+		can.addEventListener("mousedown",function(e){
+			drawFlag = true;
+			oldX = e.clientX;
+			oldY = e.clientY;
+		},false);
+		can.addEventListener("mouseup",function(){
+			drawFlag = false;
+		},false);
+	},true);
+	//絵を描く
+	function draw(e){
+		if(!drawFlag)return;
+		var x = e.clientX;
+		var y = e.clientY;
+		can = document.getElementById("oekaki");
+		var context = can.getContext("2d");
+		context.fillStyle = "rbga(255,0,0,1)";
+		context.lineWidth = 1;
+		context.beginPath();
+		context.moveTo(oldX,oldY);
+		context.lineTo(x,y);
+		context.stroke();
+		context.closePath();
+		oldX = x;
+		oldY = y;
+        
+	}
+    
+  function OnButtonClick() {
+  
+      var data = can.toDataURL();
+      alert(data);
+      
+      var base64img = data ;
+    Base64ToImage(base64img, function(img) {
+    // <img>要素にすることで幅・高さがわかります
+    alert("w=" + img.width + " h=" + img.height);
+    // <img>要素としてDOMに追加
+    document.getElementById('main').appendChild(img);
+    document.write(img);
+});
+      
+      function OnButtonClick() {
+  
+      var data = can.toDataURL();
+      alert(data);
+      
+      var base64img = data ;
+    Base64ToImage(base64img, function(img) {
+    // <img>要素にすることで幅・高さがわかります
+    alert("w=" + img.width + " h=" + img.height);
+    // <img>要素としてDOMに追加
+    document.getElementById('main').appendChild(img);
+    document.write(img);
+});
+     
+
+   }
+
+//base64のテキストをimgに戻す関数
+function Base64ToImage(base64img, callback) {
+    var img = new Image();
+    img.onload = function() {
+        callback(img);
+    };
+    img.src = base64img;
+}
+
+
+    
+</script>
+</body>
+</html>
