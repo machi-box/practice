@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+        #text{
+            font-size: 100px;
+            padding-left: 140px;
+            letter-spacing:0px;
+        }
+        
+    </style>
+
 <body>
-    
+    <div id="text">
+        
+    </div>
 </body>
 
 <script>
@@ -40,9 +55,37 @@ function onMidiMessage(event){
         str += event.data[i] + ':';
     }
     console.log(str);
+    //押された判定だけ取る
+    if ( str.match(/144/)) {
+        if (str.match(/48/)){
+        var txt = "ごめんなさい";
+        }else if (str.match(/50/)){
+          var txt = "すみません";
+        }else if (str.match(/52/)){
+         var txt = "土下座するしかない";
+        }else if (str.match(/53/)){
+        var txt = "金ドブ";
+        }else if (str.match(/55/)){
+         var txt = "メンゴ";
+    }else if (str.match(/57/)){
+         var txt = "クレイジー";
+    }else if (str.match(/59/)){
+         var txt = "わかる";
+    }else if (str.match(/61/)){
+         var txt = "眠い";
+    }else if (str.match(/63/)){
+         var txt = "おなすい";
+    }   document.getElementById("text").innerHTML=txt;
+        //document.write("おした");
+        //document.write(str + '<br>');
 }
- 
-//MIDIデバイスへアクセスする
+        //鍵盤を話したらテキストをリセットできない？？
+        if ( str.match(/128/)) {
+       var txt = "";
+        document.getElementById("text").innerHTML=txt;
+    }    
+}
+
 navigator.requestMIDIAccess()
     .then(success, failure);
     
