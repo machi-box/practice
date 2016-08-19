@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-
+<link rel="stylesheet" type="text/css" href="csshake.css">
     <style>
         body{
             overflow: hidden;
         }
         #text{
-            font-size: 100px;
+            font-size: 400px;
             padding-left: 140px;
-            letter-spacing:0px;
+            letter-spacing:-70px;
         }
         
     </style>
 
 <body>
-    <div id="text">
-        
+    <div id="text" class="preview-item shake shake shake-constant shake-constant--hover">
     </div>
 </body>
 
@@ -58,23 +57,23 @@ function onMidiMessage(event){
     //押された判定だけ取る
     if ( str.match(/144/)) {
         if (str.match(/48/)){
-        var txt = "ごめんなさい";
+        var txt = "ど";
         }else if (str.match(/50/)){
-          var txt = "すみません";
+          var txt = "れ";
         }else if (str.match(/52/)){
-         var txt = "土下座するしかない";
+         var txt = "み";
         }else if (str.match(/53/)){
-        var txt = "金ドブ";
+        var txt = "ふぁ";
         }else if (str.match(/55/)){
-         var txt = "メンゴ";
+         var txt = "そ";
     }else if (str.match(/57/)){
-         var txt = "クレイジー";
+         var txt = "ら";
     }else if (str.match(/59/)){
-         var txt = "わかる";
+         var txt = "し";
     }else if (str.match(/61/)){
-         var txt = "眠い";
+         var txt = "ど";
     }else if (str.match(/63/)){
-         var txt = "おなすい";
+         var txt = "れ";
     }   document.getElementById("text").innerHTML=txt;
         //document.write("おした");
         //document.write(str + '<br>');
@@ -82,7 +81,7 @@ function onMidiMessage(event){
         //鍵盤を話したらテキストをリセットできない？？
         if ( str.match(/128/)) {
        var txt = "";
-        document.getElementById("text").innerHTML=txt;
+       document.getElementById("text").innerHTML=txt;
     }    
 }
 
