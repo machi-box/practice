@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="sample.js"></script>
+</head>
+
+<script>
+    <?php
+    header('Access-Control-Allow-Origin: *');
+    ?>
+    var weather = $.getJSON("http://weather.olp.yahooapis.jp/v1/place?coordinates=139.732293,35.663613&appid=dj0zaiZpPTBHSWhSRkJvVlk3dSZzPWNvbnN1bWVyc2VjcmV0Jng9MGI-&output=json",function(data){
+        
+    }
+                           
+                           );
+    </script>
+    
+<body>
+    
+</body>
+</html>
