@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script src="source.js"></script>
+    <script>
+        myTotal = 0;
+        myInput = "";
+        myCalc = "+";
+        myFlg = 1;
+
+        function input(myData) {
+            myTotal += myData;
+            console.log(myTotal);
+            document.keisan.txtb.value = "";
+        };
+    </script>
 </head>
+
 <body>
-<form action="keisan">
-    
-    <input type="text" name="txtb"  value="hogehoge">
- </form>
+    <form action="keisan">
+        <input type="button" value="1" onClick="input(1)">
+        <input type="button" value="2" onClick="input(2)">
+        <input type="button" value="3" onClick="input(3)">
+        <input type="button" value="4" onClick="input(4)">
+        <input type="button" value="5" onClick="input(5)">
+        <input type="button" value="6" onClick="input(6)">
+        <input type="button" value="7" onClick="input(7)">
+        <input type="button" value="8" onClick="input(8)">
+        <input type="button" value="9" onClick="input(9)">
+        <input type="button" value="0" onClick="input(0)">
+        <input type="button" onClick="output()" value="answer">
+        <input type="text" name="txtb" value="hogehoge"> </form>
 </body>
+
 </html>

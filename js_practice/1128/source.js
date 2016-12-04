@@ -1,4 +1,3 @@
-
 myTotal = 0;
 myInput = "";
 myCalc = "+";
@@ -8,8 +7,5 @@ function input(myData){
     console.log("hogehoge");
     myTotal += myData;
     console.log(myTotal);
-    
+  document.keisan.txtb.value="";
 };
-
-
-document.keisan.txtb.value="ウワアン";
