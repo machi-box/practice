@@ -1,6 +1,8 @@
 (function(){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function(){
+        
+        //これを書かなくちゃいけない理由がわからない
         if (this.readyState==4 && this.status==200){
             //ここに書く
             console.log("ok!");
