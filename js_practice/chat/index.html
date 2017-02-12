@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Chat</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+<style type="text/css">
+#log {
+    border: 1px solid #AAA;
+    height:400px;
+    width:600px;
+    overflow: scroll;
+}
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<script type="text/javascript">
+ 
+function load_log()
+{
+    $.ajax({
+        type: 'post',
+        url: './log.txt',
+        success: function( data ){
+            log = data.replace(/[\n\r]/g, "<br />");
+            $('#log').html(log);
+        }
+    });
+}
+ 
+function write_message()
+{
+    $.ajax({
+        type: 'post',
+        url: 'write.php',
+        data: {
+            'message' : $("#message").val()
+        },
+        success: function(){
+            load_log();
+            $("#message").val('');
+        }
+    });
+}
+ 
+$(document).ready(function()
+{
+    load_log();
+    setInterval('load_log()', 5000);
+});
+ 
+</script>
+ 
+<form method="post" onsubmit="write_message();return false;">
+  <input id="message" name="message" type="text" value="" />
+  <input type="button" value="送信" onclick="write_message()">
+</form>
+ 
+<div id="log"></div>
+ 
+</body>
+</html>

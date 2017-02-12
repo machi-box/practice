@@ -1,0 +1,19 @@
+body{
+    background-image: url(img/elixir.jpg);
+    background-size: 180%;
+    background-position:top center; 
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+}
+img{
+    margin: 20px auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#temp{
+}
+

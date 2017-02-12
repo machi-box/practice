@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="//code.angularjs.org/1.5.7/angular.min.js"></script>
+    <script src="source.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wether">
+        <div id="country">tokyo,jp</div>
+        <input type="button" value="変える" onclick="OnButtonClick();"/>
+        
+        <ul>
+            <li id="hare" style="display:none;"><img src="img/hare.png" alt="" width="200px"></li>
+            <li id="ame" style="display:none;"><img src="img/ame.png" alt="" width="200px"></li>
+            <li id="kumori" style="display:none;"><img src="img/kumori.png" alt="" width="200px"></li>
+        </ul>
+        <div>Temp:<span id="temp"></span></div>
+    </div>
+</body>
+</html>

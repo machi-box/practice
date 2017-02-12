@@ -1,0 +1,932 @@
+body {
+    overflow-y: scroll
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #80cbc4
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent
+}
+
+html,
+body,
+main,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+code,
+pre,
+em,
+img,
+a,
+small,
+strong,
+b,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+time {
+    margin: 0;
+    padding: 0
+}
+
+input,
+textarea {
+    border-radius: 0
+}
+
+#mytwitter,
+#about {
+    font-size: 18px
+}
+
+.bold {
+    font-weight: bold
+}
+
+.bor {
+    margin-left: -1px
+}
+
+.bor img {
+    border: 1px solid #ddd
+}
+
+#tweet span {
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+    font-size: 14px
+}
+
+.gray {
+    color: #999
+}
+
+#searchform input {
+    background-color: #eee;
+    border: medium none;
+    font-size: 18px;
+    line-height: 1.9;
+    max-width: 150px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: block;
+    height: 1.9em;
+    width: calc(100% - 20px)
+}
+
+#searchform {
+    max-width: 170px;
+    margin: 16px auto
+}
+
+#searchform input:focus {
+    text-align: left
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-ms-placeholder {
+    color: transparent
+}
+
+:focus::placeholder {
+    color: transparent
+}
+
+::-moz-placeholder {
+    color: #888;
+    opacity: 1
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+    opacity: 1
+}
+
+::-ms-placeholder {
+    color: #888;
+    opacity: 1
+}
+
+::placeholder {
+    color: #888;
+    opacity: 1
+}
+
+.mb0 {
+    margin-bottom: 0
+}
+
+.related-entry-title {
+    font-size: 16px;
+    margin-left: 17px;
+    font-weight: normal
+}
+
+.related-entry:hover {
+    background-color: #ffcdd2
+}
+
+#related {
+    margin: 60px auto 0;
+    padding: 0 50px
+}
+
+.nLinkTag {
+    font-size: 14px;
+    margin: 0 15px 0 0
+}
+
+.related-entry {
+    margin: 0 0 12px;
+    display: block;
+    padding: 2px 7px
+}
+
+input[type="button"],
+input[type="submit"] {
+    -webkit-appearance: none
+}
+
+a:focus {
+    outline: 1px dotted #536dfe
+}
+
+#tweet a {
+    display: block
+}
+
+.gb {
+    word-break: break-all;
+    background-color: #eee;
+    padding: 20px
+}
+
+#commentform input,
+body,
+textarea {
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+}
+
+.alignleft::after,
+.alignright::after,
+.comment-author .url[href*=q-az]::after,
+nav::after {
+    content: ""
+}
+
+#tagcloud span {
+    margin-left: 3px
+}
+
+.form-submit {
+    margin-top: 30px
+}
+
+.alignleft::after,
+.alignright::after {
+    height: 0;
+    margin-top: -5px;
+    position: absolute;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent
+}
+
+#mytwitter,
+#about,
+th {
+    text-align: center
+}
+
+#reply-title,
+#content h3,
+.sub-title,
+h1,
+h2 {
+    font-weight: 400
+}
+
+code {
+    white-space: pre
+}
+
+h1 a {
+    padding: 0 10px
+}
+
+h1 a:hover {
+    background-color: #ffcdd2
+}
+
+.widget li a {
+    padding: 0 5px
+}
+
+.alignright::after {
+    border-left: 12px solid #80deea;
+    display: block;
+    right: -19px;
+    top: 50%;
+    width: 0
+}
+
+.alignleft::after {
+    border-right: 13px solid #80deea;
+    display: block;
+    left: -19px;
+    top: 50%;
+    width: 0
+}
+
+.alignleft,
+.alignright {
+    position: relative
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center
+}
+
+#submit:hover {
+    background-color: #ccc
+}
+
+#post-meta {
+    text-align: center
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 24px;
+    width: calc(100% + 10px);
+    border-spacing: 0;
+    margin-left: -5px
+}
+
+th {
+    border: 5px solid #fff;
+    background-color: #ffab91;
+    color: #fff;
+    vertical-align: middle;
+    padding: 10px;
+    white-space: nowrap
+}
+
+td:first-child {
+    background-color: rgba(255, 171, 145, .5)
+}
+
+td:last-child {
+    background-color: rgba(255, 171, 145, .2)
+}
+
+td {
+    border: 5px solid #fff;
+    padding: 10px
+}
+
+.red {
+    color: #e91e63
+}
+
+.blue {
+    color: #2196f3
+}
+
+.green {
+    color: #00c853
+}
+
+.yellow {
+    color: #ffe082
+}
+
+::selection {
+    background-color: #ffe082;
+    color: #333
+}
+
+::-moz-selection {
+    background-color: #ffe082;
+    color: #333
+}
+
+.comment,
+.widget ul {
+    list-style-type: none
+}
+
+#tagcloud {
+    font-size: 15px
+}
+
+.comment-author .url[href*=q-az]::after {
+    background-image: url(/wp-content/uploads/2015/11/pr45j.jpg);
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px
+}
+
+.comment-author,
+.widget li {
+    position: relative
+}
+
+.widget img {
+    display: block;
+    margin: 0 auto
+}
+
+#aName {
+    margin-top: 25px
+}
+
+#mytwitter {
+    background-color: #5ea9dd;
+    color: #fff;
+    display: block;
+    margin: 16px auto;
+    max-width: 170px
+}
+
+#about {
+    background-color: #54b9a0;
+    color: #fff;
+    display: block;
+    margin: 16px auto;
+    max-width: 170px
+}
+
+#mytwitter:hover {
+    color: #5ea9dd;
+    background-color: transparent;
+    text-decoration: none
+}
+
+#about:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #54b9a0
+}
+
+#tag a:hover {
+    background-color: #ffe082
+}
+
+#share {
+    margin: 60px 15px 0
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.9
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+.alignleft a:hover,
+.alignright a:hover {
+    background-color: #80deea
+}
+
+.widget a:hover {
+    background-color: #ffe082
+}
+
+.comment a,
+#content a {
+    padding: 0 2px;
+    margin: 0 -2px;
+    color: #536dfe
+}
+
+.comment a:hover,
+#content a:hover {
+    background-color: #8699fe;
+    color: #fff;
+    text-decoration: none
+}
+
+body>footer {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding-bottom: 60px
+}
+
+#content {
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin: 48px auto 0;
+    padding: 0 15px
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 30px 53px;
+    word-wrap: break-word
+}
+
+article p {
+    margin-bottom: 24px
+}
+
+.widget {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    width: calc(33.3333% - 30px);
+    width: -webkit-calc(33.3333% - 30px)
+}
+
+#copyright {
+    font-size: 14px;
+    text-align: center
+}
+
+.comment-author img {
+    float: right
+}
+
+.widget ul {
+    font-size: 15px
+}
+
+.widget li {
+    margin-left: 17px;
+    margin-bottom: 6px
+}
+
+.yel::before {
+    display: inline-block;
+    width: 1em;
+    color: #ffe082;
+    content: "●";
+    margin-left: calc(-1em - 7px);
+    margin-left: -webkit-calc(-1em - 7px);
+    margin-right: 7px
+}
+
+article .yel {
+    padding-left: 26px;
+    margin-bottom: 12px
+}
+
+.alignright,
+.reply {
+    text-align: right
+}
+
+#commentform input,
+textarea {
+    background-color: #eee;
+    width: 85%;
+    width: calc(90% - 10px);
+    width: -webkit-calc(90% - 10px)
+}
+
+input#submit {
+    cursor: pointer;
+    width: 90%;
+    font-size: 14px
+}
+
+#share a {
+    display: inline-block;
+    padding: 5px 0;
+    text-align: center;
+    width: calc(100% / 6);
+    width: -webkit-calc(100% / 6)
+}
+
+#share a:hover {
+    background-color: transparent
+}
+
+#tagcloud a {
+    display: inline-block;
+    margin: 0 5px 6px -5px;
+    padding: 0 5px
+}
+
+time,
+#tag {
+    font-size: 14px
+}
+
+#hatebu:hover {
+    color: #1AAEE2
+}
+
+#hatebu {
+    background-color: #1AAEE2;
+    color: #fff
+}
+
+#pocket:hover {
+    color: #ED5965
+}
+
+#pocket {
+    background-color: #ED5965;
+    color: #fff
+}
+
+#googleplus:hover {
+    color: #E06054
+}
+
+#googleplus {
+    background-color: #E06054;
+    color: #fff
+}
+
+#twitter:hover {
+    color: #6EB2E0
+}
+
+#twitter {
+    background-color: #6EB2E0;
+    color: #fff
+}
+
+#facebook:hover {
+    color: #506aa9
+}
+
+#facebook {
+    background-color: #506aa9;
+    color: #fff
+}
+
+#feedly:hover {
+    color: #7BCC66
+}
+
+#feedly {
+    background-color: #7BCC66;
+    color: #fff
+}
+
+#respond {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 15px 50px
+}
+
+#commentform label {
+    display: block;
+    font-size: 15px;
+    margin: 8px 0 0 5%
+}
+
+#commentform input {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0 5px;
+    border: 0
+}
+
+#commentform textarea {
+    resize: vertical;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    padding: 5px
+}
+
+.commets-list {
+    margin: 15px auto;
+    max-width: 750px;
+    padding: 0 15px
+}
+
+.comment-author .fn,
+.comment-meta {
+    margin-left: 10px
+}
+
+.comment {
+    font-size: 15px
+}
+
+#reply-title {
+    font-size: 20px
+}
+
+.comment-meta a,
+code,
+.reply {
+    font-size: 14px
+}
+
+.comment-body {
+    margin-bottom: 90px
+}
+
+.comment-body p {
+    padding: 10px;
+    word-break: break-all
+}
+
+.children {
+    padding-left: 35px
+}
+
+nav {
+    padding: 0 25px;
+    max-width: 800px;
+    margin: 0 auto 80px
+}
+
+nav::after {
+    clear: both;
+    display: block
+}
+
+.alignleft {
+    float: left
+}
+
+.alignright {
+    float: right;
+    margin-left: 40px
+}
+
+.alignleft a,
+.alignright a {
+    font-size: 14px;
+    padding: 0 5px
+}
+
+code {
+    margin-bottom: 24px;
+    letter-spacing: .5px;
+    background-color: #eee;
+    font-family: Consolas, "Courier New", Courier, Monaco, Meiryo, monospace;
+    overflow: auto;
+    padding: 20px;
+    line-height: 1.5;
+    display: block
+}
+
+code p {
+    margin-bottom: 17px
+}
+
+#tag a {
+    display: inline-block
+}
+
+#content img {
+    display: block;
+    margin: 0 auto
+}
+
+pre {
+    display: block;
+    font-family: Consolas, "Courier New", Courier, Monaco, Meiryo, monospace;
+    overflow: auto;
+    word-wrap: normal
+}
+
+#content h2 {
+    font-size: 25px;
+    background-color: #80deea;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    margin: 48px 0 24px
+}
+
+#content h3,
+.sub-title {
+    font-size: 24px
+}
+
+.comment-notes,
+.logged-in-as {
+    font-size: 15px
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 540px;
+    max-height: 240px
+}
+
+#content h3::before,
+.sub-title::before {
+    color: #ef9a9a;
+    content: "●";
+    padding-right: 2px
+}
+
+body>header a {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%
+}
+
+body>header {
+    margin: 96px auto 48px;
+    max-width: 600px
+}
+
+.related-entry-title::before {
+    display: inline-block;
+    width: 1em;
+    margin-right: 5px;
+    margin-left: calc(-1em - 5px);
+    margin-left: -webkit-calc(-1em - 5px);
+    content: "●";
+    margin-right: 5px
+}
+
+.index0::before {
+    color: #ef9a9a
+}
+
+.index1::before {
+    color: #dce775
+}
+
+.index2::before {
+    color: #64b5f6
+}
+
+.index3::before {
+    color: #80cbc4
+}
+
+.index4::before {
+    color: #f8bbd0
+}
+
+.index5::before {
+    color: #c5e1a5
+}
+
+.widget h5,
+#related h4 {
+    border-bottom: 4px solid #80cbc4;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-weight: 400
+}
+
+#tweet a::before {
+    display: inline-block;
+    width: 1em;
+    content: "●";
+    margin-left: calc(-1em - 4px);
+    margin-left: -webkit-calc(-1em - 4px);
+    margin-right: 4px
+}
+
+.nLinkTag:nth-child(2) {
+    margin-left: 17px
+}
+
+time {
+    margin: 0 15px
+}
+
+#tag a {
+    padding: 0 5px;
+    margin: 0 10px
+}
+
+#tweet a::after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+section section h3:first-child {
+    margin-top: 48px
+}
+
+@media(max-width:860px) {
+    body>footer {
+        height: auto;
+        display: block
+    }
+    #share a {
+        margin: 7px auto;
+        width: 50%
+    }
+    #share {
+        margin: 48px 0
+    }
+    .widget {
+        display: block;
+        width: auto
+    }
+    article {
+        padding: 30px 15px 15px
+    }
+    .children {
+        padding-left: 5px
+    }
+    #content {
+        padding: 0;
+        word-break: break-all
+    }
+    .alignright {
+        margin-left: 0
+    }
+    #content img {
+        height: auto;
+        max-width: 100%
+    }
+    #content h2,
+    #content h3,
+    .sub-title {
+        font-size: 20px
+    }
+    #related {
+        padding: 0
+    }
+    .widget li {
+        margin-bottom: 20px
+    }
+    #content h2 {
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        width: -webkit-calc(100% + 30px);
+        box-sizing: border-box
+    }
+}
+
+#myCanvas {
+    cursor: pointer;
+}
+
+#canvasmenu::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.menuicon {
+    height: 20px;
+    width: 20px;
+    background-color: #ddd;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+#canvasmenu {
+    margin: 0 auto;
+    max-width: 700px;
+}
