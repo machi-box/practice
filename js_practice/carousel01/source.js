@@ -17,7 +17,7 @@ $(function(){
     var setInnerWidth = $("#carouselInner ul.column").outerWidth();
     var setImageWidth = $("#carouselInner ul.column li").outerWidth();
     console.log(setImageWidth);
-    
+ 
     $("#carouselWrap").css("width",setWidth*0.8 + "px");
     $("#carouselInner ul.column").css("width",setImageWidth*$('#carouselInner ul.column li').length +"px");
     $("#carouselInner ul.column:last").prependTo("#carouselInner");
