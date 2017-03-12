@@ -1,0 +1,8 @@
+ol li{
+    list-style: none;
+    float: left;
+}
+
+ol{
+    width: 80px;
+}
